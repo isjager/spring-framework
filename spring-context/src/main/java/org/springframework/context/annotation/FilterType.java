@@ -34,29 +34,40 @@ public enum FilterType {
 	/**
 	 * Filter candidates marked with a given annotation.
 	 * @see org.springframework.core.type.filter.AnnotationTypeFilter
+	 *
+	 * 注解类型，@Controller、@Service、@Repository、@Component
 	 */
 	ANNOTATION,
 
 	/**
 	 * Filter candidates assignable to a given type.
 	 * @see org.springframework.core.type.filter.AssignableTypeFilter
+	 *
+	 * 指定类型
 	 */
 	ASSIGNABLE_TYPE,
 
 	/**
 	 * Filter candidates matching a given AspectJ type pattern expression.
 	 * @see org.springframework.core.type.filter.AspectJTypeFilter
+	 *
+	 * aspectj 类型的
 	 */
 	ASPECTJ,
 
 	/**
 	 * Filter candidates matching a given regex pattern.
 	 * @see org.springframework.core.type.filter.RegexPatternTypeFilter
+	 *
+	 * 正则表达式的
 	 */
 	REGEX,
 
-	/** Filter candidates using a given custom
+	/**
+	 * Filter candidates using a given custom
 	 * {@link org.springframework.core.type.filter.TypeFilter} implementation.
+	 *
+	 * 自定义类型的
 	 */
 	CUSTOM
 

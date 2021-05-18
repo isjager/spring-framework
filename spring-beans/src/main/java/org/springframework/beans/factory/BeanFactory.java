@@ -113,6 +113,9 @@ import org.springframework.lang.Nullable;
  * @see org.springframework.beans.factory.config.BeanPostProcessor#postProcessAfterInitialization
  * @see DisposableBean#destroy
  * @see org.springframework.beans.factory.support.RootBeanDefinition#getDestroyMethodName
+ *
+ * BeanFactory 是用于访问 Spring Bean 容器的根接口，典型的工厂模式，用于生产 Bean 的一个 Bean 工厂，
+ * 其提供了生产 Bean 所需的最基本规则。
  */
 public interface BeanFactory {
 
